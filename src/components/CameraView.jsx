@@ -1,4 +1,8 @@
 function CameraView({ state, dispatch }) {
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    console.log(file);
+  };
   const { currentCamera } = state;
   console.log(currentCamera);
   const images = [
@@ -29,10 +33,24 @@ function CameraView({ state, dispatch }) {
     (image) => image.parentCamera === currentCamera
   );
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted");
+  };
+
   return (
     <div>
       <div className="d-flex flex-column m-5">
         <h1 className="mb-3">Camera View</h1>
+
+        {/* <form onSubmit={handleSubmit}>
+          <div className="d-flex flex-column">
+            <input type="file" accept="image/*" onChange={handleImageChange} />
+            <input type="text" placeholder="Description" />
+            <button type="submit">Upload</button>
+          </div>
+        </form> */}
+
         {sortedImages.map((image, index) => (
           <div key={index} className="ms-3 d-flex flex-column">
             <img
