@@ -18,7 +18,7 @@ function CameraView({ state, dispatch }) {
     },
     {
       src: "/images/dog.png",
-      parentCamera: "camera2",
+      parentCamera: "camera3",
       description: "description 3",
       date: "2025-01-03",
       time: "12:00:00",

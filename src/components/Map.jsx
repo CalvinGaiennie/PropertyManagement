@@ -6,14 +6,20 @@ function Map({ dispatch }) {
     {
       src: "/images/camera.png",
       alt: "camera1",
-      top: "25%",
-      left: "30%",
+      top: "16%",
+      left: "32%",
     },
     {
       src: "/images/camera.png",
       alt: "camera2",
-      top: "60%",
-      left: "70%",
+      top: "7%",
+      left: "34%",
+    },
+    {
+      src: "/images/camera.png",
+      alt: "camera3",
+      top: "70%",
+      left: ".2%",
     },
   ];
 
@@ -25,7 +31,7 @@ function Map({ dispatch }) {
   return (
     <div className="d-flex flex-column">
       <div>
-        <h1 className="ms-3">Camera Names</h1>
+        <h1 className="ms-3">Map</h1>
       </div>
       <div className="position-relative">
         <img
